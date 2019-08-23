@@ -5,20 +5,20 @@ clean:
 
 .PHONY: build
 build: clean
-	python deepnovo_cython_setup.py build_ext --inplace
+	python3 deepnovo_cython_setup.py build_ext --inplace
 
 .PHONY: train
 train:
-	python main.py --train
+	python3 main.py --train
 
 .PHONY: valid
 valid:
-	python main.py --valid
+	python3 main.py --valid
 
 .PHONY: denovo
 denovo:
-	python main.py --search_denovo
+	python3 main.py --search_denovo
 
 .PHONY: test
 test:
-	python main.py --test
+	python3 main.py --test
